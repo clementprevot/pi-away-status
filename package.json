@@ -1,0 +1,49 @@
+{
+	"name": "@clementprevot/pi-away-status",
+	"version": "0.1.0",
+	"description": "Pi extension that notices when you step away from your Mac, keeps the agent working instead of waiting on prompts, and hands you an exact recap when you come back",
+	"keywords": [
+		"pi-package",
+		"pi-extension",
+		"away",
+		"idle",
+		"handoff",
+		"macos"
+	],
+	"license": "MIT",
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/clementprevot/pi-away-status.git"
+	},
+	"engines": {
+		"node": ">=22.6"
+	},
+	"files": [
+		"*.ts"
+	],
+	"pi": {
+		"extensions": [
+			"./index.ts"
+		]
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-ai": "*",
+		"@earendil-works/pi-coding-agent": "*",
+		"typebox": "*"
+	},
+	"devDependencies": {
+		"@earendil-works/pi-ai": "*",
+		"@earendil-works/pi-coding-agent": "*",
+		"@types/node": "^24.0.0",
+		"typebox": "*",
+		"typescript": "^5.9.0"
+	},
+	"scripts": {
+		"test": "node --test test/*.test.ts",
+		"typecheck": "tsc --noEmit"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}

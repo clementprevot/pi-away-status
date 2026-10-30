@@ -1,6 +1,6 @@
 {
 	"name": "@clementprevot/pi-away-status",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Pi extension that notices when you step away from your Mac, keeps the agent working instead of waiting on prompts, and hands you an exact recap when you come back",
 	"keywords": [
 		"pi-package",

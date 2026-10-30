@@ -42,7 +42,7 @@ export function stillAwayNote(since: Date | undefined): string {
 	const when = since ? ` since ${clockTime(since)}` : "";
 	return [
 		`[away-status] Away mode is still on${when}: the user said they were leaving and has not said they are back.`,
-		"Start your answer with one short line pointing it out (they may just be adding a last instruction before leaving, which is fine), and remind them that \"je suis de retour\" or /back ends it.",
+		"Start your answer with one short line pointing it out (they may just be adding a last instruction before leaving, which is fine), and remind them that \"I'm back\" (or \"je suis de retour\") or /back ends it.",
 		"Keep following the away mode rules: ask_user_question stays blocked until they are back.",
 	].join("\n");
 }

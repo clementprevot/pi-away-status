@@ -136,7 +136,7 @@ export default function awayStatus(pi: ExtensionAPI) {
 		if (presence.leave) {
 			forceAway();
 			if (idle) pendingNote = leaveNote();
-			if (ctx.hasUI) ctx.ui.notify("Away mode on. Say \"je suis de retour\" or type /back to end it.", "info");
+			if (ctx.hasUI) ctx.ui.notify("Away mode on. Say \"I'm back\" (or \"je suis de retour\") or type /back to end it.", "info");
 		} else if (idle && !presence.back && sensor.forced === "away") {
 			pendingNote = stillAwayNote(forcedAwaySince);
 		}
